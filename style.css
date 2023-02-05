@@ -1,0 +1,88 @@
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+a,
+h1,
+h2,
+h3,
+p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+/**********************Category******************/
+.kategori_liste {
+  display: flex;
+  gap: 3rem;
+}
+
+.kategori_liste a {
+  text-decoration: none;
+}
+
+/*******************ProductList**************************/
+
+.produkter {
+  display: grid;
+}
+
+.procent {
+  border: 2px solid black;
+}
+
+.produkter img:hover {
+  transform: rotate(0.5turn);
+}
+
+/********************Product**********************/
+
+.produkt_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.købekasse {
+  display: grid;
+  grid-column: 2;
+  background: #d8d8d8;
+  color: purple;
+  padding: 1rem;
+}
+.info {
+  padding: 1rem;
+}
+
+.udsolgt {
+  opacity: 0.5;
+}
+
+dt {
+  font-weight: 700;
+}
+
+@media (min-width: 800px) {
+  .produktliste_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
