@@ -2,6 +2,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.billedbody {
+  background-image: url(billede.jpg);
+}
+
 main {
   margin-left: 30%;
   margin-right: 30%;
@@ -40,13 +44,14 @@ p {
 }
 
 /*******************ProductList**************************/
+.produktliste_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
 
 .produkter {
   display: grid;
-}
-
-.procent {
-  border: 2px solid black;
 }
 
 .produkter img:hover {
@@ -79,10 +84,12 @@ dt {
   font-weight: 700;
 }
 
-@media (min-width: 800px) {
-  .produktliste_grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-  }
+.procent {
+  background-color: red;
+  padding: 0.5rem;
+  display: inline-block;
+}
+
+.gem {
+  display: none;
 }
